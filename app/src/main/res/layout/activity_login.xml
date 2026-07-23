@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Szymona"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <EditText android:id="@+id/emailInput" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="Email address"
+        android:inputType="textEmailAddress" />
+
+    <EditText android:id="@+id/passwordInput" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="App password"
+        android:inputType="textPassword" />
+
+    <EditText android:id="@+id/imapHostInput" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="IMAP host (e.g. imap.gmail.com)" />
+
+    <EditText android:id="@+id/imapPortInput" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="IMAP port"
+        android:inputType="number" android:text="993" />
+
+    <EditText android:id="@+id/smtpHostInput" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="SMTP host (e.g. smtp.gmail.com)" />
+
+    <EditText android:id="@+id/smtpPortInput" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="SMTP port"
+        android:inputType="number" android:text="587" />
+
+    <Button android:id="@+id/loginButton" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Sign in"
+        android:layout_marginTop="16dp" />
+
+    <TextView android:id="@+id/statusText" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_marginTop="12dp"
+        android:textColor="#CC0000" />
+
+</LinearLayout>
